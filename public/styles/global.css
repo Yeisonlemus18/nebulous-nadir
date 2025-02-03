@@ -10,9 +10,10 @@
   --primary-color: #2C3E50; /* Azul Marino Oscuro */
   --secondary-color: #3498DB; /* Azul Claro Brillante */
   --accent-color: #2ECC71; /* Verde Vibrante */
-  --neutral-color: #ECF0F1; /* Gris Claro */
+  --neutral-color: #F2F4F7; /* Gris Claro */
   --highlight-color: #E74C3C; /* Rojo Subtropical */
   --complementary-color: #95A5A6; /* Gris Azulado */
+  --section-bg-color: #F2F4F7; /* Nuevo color para fondos de secciones */
 }
 
 /* Estilos globales */
@@ -60,8 +61,8 @@ a:hover {
 
 /* Header */
 .header {
-  background: var(--primary-color);
-  color: var(--neutral-color);
+  background: var(--primary-color); /* Fondo del encabezado */
+  color: var(--neutral-color); /* Texto claro */
   padding: 2rem 0;
   text-align: center;
 }
@@ -69,11 +70,12 @@ a:hover {
 .header h1 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
+  color: var(--neutral-color); /* Asegura que el título sea visible */
 }
 
 .header .subtitle {
   font-size: 1.2rem;
-  color: var(--neutral-color);
+  color: var(--neutral-color); /* Asegura que el subtítulo sea visible */
 }
 
 .nav {
@@ -85,7 +87,7 @@ a:hover {
 }
 
 .nav a {
-  color: var(--neutral-color);
+  color: var(--neutral-color); /* Enlaces claros */
   margin: 0 1rem;
   text-decoration: none;
 }
@@ -295,4 +297,14 @@ a:hover {
   .contact-info li {
     font-size: 0.8rem;
   }
+}
+
+/* Cambios específicos para fondos alternativos */
+#experience,
+#skills,
+#education {
+  background-color: var(--section-bg-color); /* Fondo alternativo */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 2rem; /* Espaciado interno */
+  margin-bottom: 2rem; /* Espaciado entre secciones */
 }
