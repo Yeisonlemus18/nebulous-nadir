@@ -112,40 +112,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Animaciones */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes zoomIn {
-  from {
-    transform: scale(1.2);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-@keyframes slideIn {
-  from {
-    transform: translateX(-20px);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
 /* Imagen de portada */
 .cover-image {
   width: 100%;
@@ -188,7 +154,6 @@ a:hover {
 /* Experience Section */
 .job {
   margin-bottom: 2rem;
-  animation: fadeIn 0.8s ease-in-out;
 }
 
 .job h3 {
@@ -235,7 +200,6 @@ a:hover {
 /* Education Section */
 .degree {
   margin-bottom: 2rem;
-  animation: fadeIn 0.8s ease-in-out;
 }
 
 .degree h3 {

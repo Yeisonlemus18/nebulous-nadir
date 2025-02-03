@@ -1,5 +1,4 @@
 ---
-// Importaciones de componentes
 import Header from '../components/Header.astro';
 import About from '../components/About.astro';
 import Experience from '../components/Experience.astro';
@@ -7,25 +6,6 @@ import Skills from '../components/Skills.astro';
 import Education from '../components/Education.astro';
 import Contact from '../components/Contact.astro';
 
-// Importar ScrollReveal
-import ScrollReveal from 'scrollreveal';
-
-// Configuración de ScrollReveal
-const sr = ScrollReveal({
-  origin: 'bottom',
-  distance: '40px',
-  duration: 1000,
-  delay: 200,
-  reset: false,
-});
-
-// Aplicar animaciones a elementos específicos
-sr.reveal('.section h2', { interval: 200 });
-sr.reveal('.job', { interval: 200 });
-sr.reveal('.skills-list li', { interval: 100 });
-sr.reveal('.degree', { interval: 200 });
-
-// Metadatos de la página
 const title = "Yeison Carrillo - Administrador de Sistemas IT";
 const description = "Más de 10 años de experiencia en sectores bancarios, telecomunicaciones y más. Especializado en gestión de cambios, ITIL y automatización.";
 ---
@@ -40,7 +20,6 @@ const description = "Más de 10 años de experiencia en sectores bancarios, tele
   <link rel="stylesheet" href="/styles/global.css">
 </head>
 <body>
-  <!-- Componentes de la página -->
   <Header />
   <main>
     <About />

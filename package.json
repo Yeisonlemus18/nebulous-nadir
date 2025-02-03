@@ -9,8 +9,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.2.3",
-    "scrollreveal": "^4.0.9"
+    "astro": "^5.2.3"
   },
   "devDependencies": {
     "@types/scrollreveal": "^0.0.11"
