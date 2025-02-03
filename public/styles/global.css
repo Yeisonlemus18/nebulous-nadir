@@ -1,0 +1,298 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables de colores */
+:root {
+  --primary-color: #2C3E50; /* Azul Marino Oscuro */
+  --secondary-color: #3498DB; /* Azul Claro Brillante */
+  --accent-color: #2ECC71; /* Verde Vibrante */
+  --neutral-color: #ECF0F1; /* Gris Claro */
+  --highlight-color: #E74C3C; /* Rojo Subtropical */
+  --complementary-color: #95A5A6; /* Gris Azulado */
+}
+
+/* Estilos globales */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--primary-color);
+  background-color: var(--neutral-color);
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+/* Header */
+.header {
+  background: var(--primary-color);
+  color: var(--neutral-color);
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.header .subtitle {
+  font-size: 1.2rem;
+  color: var(--neutral-color);
+}
+
+.nav {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.nav a {
+  color: var(--neutral-color);
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* About Section */
+.soft-skills {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+
+.soft-skills li {
+  background: var(--secondary-color);
+  color: var(--neutral-color);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+/* Experience Section */
+.job {
+  margin-bottom: 2rem;
+}
+
+.job h3 {
+  margin-bottom: 0.5rem;
+}
+
+.job .date {
+  color: var(--complementary-color);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.job ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+}
+
+/* Skills Section */
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+
+.skills-list li {
+  background: var(--accent-color);
+  color: var(--neutral-color);
+  text-align: center;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+/* Education Section */
+.degree {
+  margin-bottom: 2rem;
+}
+
+.degree h3 {
+  margin-bottom: 0.5rem;
+}
+
+.degree .institution {
+  color: var(--complementary-color);
+  font-size: 1rem;
+}
+
+.degree .date {
+  color: var(--complementary-color);
+  font-size: 0.9rem;
+}
+
+/* Contact Section */
+.contact-info {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info li {
+  margin-bottom: 0.5rem;
+}
+
+.contact-info a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  background: var(--primary-color);
+  color: var(--neutral-color);
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+.footer p {
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Header */
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .header .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav a {
+    margin: 0.5rem 0;
+  }
+
+  /* About Section */
+  .soft-skills {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  /* Experience Section */
+  .job ul {
+    margin-left: 1rem;
+  }
+
+  /* Skills Section */
+  .skills-list {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  /* Education Section */
+  .degree h3 {
+    font-size: 1.2rem;
+  }
+
+  .degree .institution,
+  .degree .date {
+    font-size: 0.9rem;
+  }
+
+  /* Contact Section */
+  .contact-info li {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Header */
+  .header h1 {
+    font-size: 1.8rem;
+  }
+
+  .header .subtitle {
+    font-size: 0.8rem;
+  }
+
+  /* Soft Skills */
+  .soft-skills li {
+    padding: 0.5rem;
+  }
+
+  /* Experience Section */
+  .job h3 {
+    font-size: 1.2rem;
+  }
+
+  .job .date {
+    font-size: 0.8rem;
+  }
+
+  /* Skills Section */
+  .skills-list {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+  /* Education Section */
+  .degree h3 {
+    font-size: 1.1rem;
+  }
+
+  .degree .institution,
+  .degree .date {
+    font-size: 0.8rem;
+  }
+
+  /* Contact Section */
+  .contact-info li {
+    font-size: 0.8rem;
+  }
+}

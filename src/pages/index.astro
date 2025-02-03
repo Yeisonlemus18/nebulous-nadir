@@ -1,11 +1,35 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import About from '../components/About.astro';
+import Experience from '../components/Experience.astro';
+import Skills from '../components/Skills.astro';
+import Education from '../components/Education.astro';
+import Contact from '../components/Contact.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const title = "Yeison Carrillo - Administrador de Sistemas IT";
+const description = "Más de 10 años de experiencia en sectores bancarios, telecomunicaciones y más. Especializado en gestión de cambios, ITIL y automatización.";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content={description}>
+  <title>{title}</title>
+  <link rel="stylesheet" href="/styles/global.css">
+</head>
+<body>
+  <Header />
+  <main>
+    <About />
+    <Experience />
+    <Skills />
+    <Education />
+    <Contact />
+  </main>
+  <footer class="footer">
+    <p>© 2023 Yeison Carrillo. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
