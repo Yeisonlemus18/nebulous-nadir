@@ -1,13 +1,11 @@
 ---
-// Importar la imagen desde la carpeta src/assets
-import portada from '../assets/portada.webp';
+import ImageComponent from '../components/ImageComponent.astro';
 ---
 
 <header class="header">
   <div class="container">
-    <!-- Usar la propiedad .src del objeto importado -->
-    <img src={portada.src} alt="Yeison Carrillo - Administrador de Sistemas IT" class="cover-image" loading="lazy" />
-    <h1>Yeison Arbey Carrillo Lemus</h1>
+    <ImageComponent alt="Yeison Carrillo - Administrador de Sistemas IT" class="cover-image" />
+    <h1>Yeison Carrillo</h1>
     <p class="subtitle">Administrador de Sistemas IT | Gestión de Cambios | Automatización</p>
     <nav class="nav">
       <a href="#about">Sobre mí</a>
@@ -22,7 +20,7 @@ import portada from '../assets/portada.webp';
 <style>
 .cover-image {
   width: 100%;
-  max-width: 200px;
+  max-width: 800px;
   height: auto;
   border-radius: 10px;
   margin-bottom: 1rem;

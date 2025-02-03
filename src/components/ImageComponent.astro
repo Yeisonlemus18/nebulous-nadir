@@ -1,0 +1,7 @@
+---
+const { src, alt, className } = Astro.props;
+
+import defaultImage from '../assets/portada.webp';
+---
+
+<img src={src || defaultImage.src} alt={alt || "Imagen por defecto"} class={className} loading="lazy" />
