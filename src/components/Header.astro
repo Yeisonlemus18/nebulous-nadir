@@ -1,7 +1,13 @@
+---
+// Importar la imagen desde la carpeta src/assets
+import portada from '../assets/portada.webp';
+---
+
 <header class="header">
   <div class="container">
-    <img src="/images/portada.webp" alt="Yeison Carrillo - Administrador de Sistemas IT" class="cover-image" loading="lazy" />
-    <h1>Yeison Carrillo</h1>
+    <!-- Usar la propiedad .src del objeto importado -->
+    <img src={portada.src} alt="Yeison Carrillo - Administrador de Sistemas IT" class="cover-image" loading="lazy" />
+    <h1>Yeison Arbey Carrillo Lemus</h1>
     <p class="subtitle">Administrador de Sistemas IT | Gestión de Cambios | Automatización</p>
     <nav class="nav">
       <a href="#about">Sobre mí</a>
@@ -16,10 +22,10 @@
 <style>
 .cover-image {
   width: 100%;
-  max-width: 200px; /* Límite máximo para evitar que sea demasiado grande */
+  max-width: 200px;
   height: auto;
   border-radius: 10px;
   margin-bottom: 1rem;
-  object-fit: cover; /* Asegura que la imagen se ajuste bien */
+  object-fit: cover;
 }
 </style>
