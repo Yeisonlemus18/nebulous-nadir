@@ -8,14 +8,14 @@
 /* Variables de colores */
 :root {
   --primary-color: #2C3E50; /* Azul Marino Oscuro */
-  --secondary-color: #3498DB; /* Azul Claro Brillante */
-  --accent-color: #2ECC71; /* Verde Vibrante */
-  --neutral-color: #ECF0F1; /* Gris Claro */
+  --secondary-color: #086db1; /* Azul Claro Brillante */
+  --accent-color: #3a3c58de; /* Verde Vibrante */
+  --neutral-color: #f1f1ec; /* Gris Claro */
   --highlight-color: #E74C3C; /* Rojo Subtropical */
   --complementary-color: #95A5A6; /* Gris Azulado */
   --section-bg-color: #F2F4F7; /* Fondo alternativo */
   --dark-primary-color: #1F2D3D; /* Azul muy oscuro */
-  --light-bg-color: #F9FAFB; /* Fondo claro */
+  --light-bg-color: #2C3E50; /* Fondo claro */
 }
 
 /* Variables de fuentes */
@@ -28,7 +28,7 @@
 body {
   font-family: var(--font-primary);
   line-height: 1.6;
-  color: var(--primary-color);
+  color: var(--neutral-color);
   background-color: var(--neutral-color);
   padding: 0;
   margin: 0;
@@ -40,7 +40,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--dark-primary-color);
+  color: var(--neutral-color);
   margin-bottom: 1rem;
 }
 
@@ -67,7 +67,7 @@ a:hover {
 .section {
   background: var(--light-bg-color);
   padding: 6rem 0;
-  border-radius: 15px;
+  border-radius: 0%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -228,7 +228,7 @@ a:hover {
 }
 
 .contact-info a {
-  color: var(--secondary-color);
+  color: var(--neutral-color);
   text-decoration: none;
 }
 

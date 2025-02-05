@@ -1,11 +1,261 @@
-<section id="education" class="section">
+---
+// Importaciones
+import ScrollReveal from 'scrollreveal';
+---
+
+<section id="education" class="section dark-mode">
   <div class="container">
     <h2>Educación</h2>
-    <div class="degree">
-      <h3>Administración y Gestión de Empresas</h3>
-      <p class="institution">Universidad Nacional Abierta y a Distancia - UNAD</p>
-      <p class="date">2016 - 2020</p>
+
+    <!-- Educación Oficial y Homologada -->
+    <div class="education-group animate-on-scroll">
+      <h3 class="group-title">Educación Oficial y Homologada</h3>
+      <div class="education-list">
+        <!-- Estudio 1 -->
+        <div class="education-card">
+          <div class="card-header" onclick="toggleDetails(this)">
+            <h4>Administración y Gestión de Empresas</h4>
+            <span class="arrow">▼</span>
+          </div>
+          <div class="card-details">
+            <p><strong>Centro:</strong> Universidad Nacional Abierta y a Distancia - UNAD</p>
+            <p><strong>Año:</strong> 2016 - 2020</p>
+            <p><strong>Descripción:</strong> Diplomado en Gerencia Estratégica con enfoque en liderazgo y gestión organizacional.</p>
+          </div>
+        </div>
+
+        <!-- Estudio 2 -->
+        <div class="education-card">
+          <div class="card-header" onclick="toggleDetails(this)">
+            <h4>Administrador de Sistemas Informáticos en Red</h4>
+            <span class="arrow">▼</span>
+          </div>
+          <div class="card-details">
+            <p><strong>Centro:</strong> Servicio Nacional de Empleo - SENA</p>
+            <p><strong>Año:</strong> 2005</p>
+            <p><strong>Descripción:</strong> Gestión y administración de redes informáticas.</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Repite este bloque para cada título -->
+
+    <!-- Cursos Privados de Mejoramiento Profesional -->
+    <div class="education-group animate-on-scroll">
+      <h3 class="group-title">Cursos Privados de Mejoramiento Profesional</h3>
+      <div class="education-list">
+        <!-- Curso 1 -->
+        <div class="education-card">
+          <div class="card-header" onclick="toggleDetails(this)">
+            <h4>Scrum Master</h4>
+            <span class="arrow">▼</span>
+          </div>
+          <div class="card-details">
+            <p><strong>Centro:</strong> Scrum Institute</p>
+            <p><strong>Año:</strong> 2019</p>
+            <p><strong>Descripción:</strong> Certificación en facilitación y liderazgo de equipos Scrum.</p>
+          </div>
+        </div>
+
+        <!-- Curso 2 -->
+        <div class="education-card">
+          <div class="card-header" onclick="toggleDetails(this)">
+            <h4>Scaled Scrum Expert</h4>
+            <span class="arrow">▼</span>
+          </div>
+          <div class="card-details">
+            <p><strong>Centro:</strong> Scrum Institute</p>
+            <p><strong>Año:</strong> 2019</p>
+            <p><strong>Descripción:</strong> Formación avanzada en metodologías ágiles y gestión de proyectos Scrum.</p>
+          </div>
+        </div>
+
+        <!-- Curso 3 -->
+        <div class="education-card">
+          <div class="card-header" onclick="toggleDetails(this)">
+            <h4>Scrum Product Owner</h4>
+            <span class="arrow">▼</span>
+          </div>
+          <div class="card-details">
+            <p><strong>Centro:</strong> Scrum Institute</p>
+            <p><strong>Año:</strong> 2019</p>
+            <p><strong>Descripción:</strong> Certificación en roles y responsabilidades del Product Owner en equipos Scrum.</p>
+          </div>
+        </div>
+
+        <!-- Curso 4 -->
+        <div class="education-card">
+          <div class="card-header" onclick="toggleDetails(this)">
+            <h4>Certificación Internacional de Inglés (Nivel B1)</h4>
+            <span class="arrow">▼</span>
+          </div>
+          <div class="card-details">
+            <p><strong>Centro:</strong> Limerick Language Centre</p>
+            <p><strong>Año:</strong> 2018</p>
+            <p><strong>Descripción:</strong> Certificación oficial de inglés como segunda lengua.</p>
+          </div>
+        </div>
+
+        <!-- Curso 5 -->
+        <div class="education-card">
+          <div class="card-header" onclick="toggleDetails(this)">
+            <h4>ITIL Foundation Certificate</h4>
+            <span class="arrow">▼</span>
+          </div>
+          <div class="card-details">
+            <p><strong>Centro:</strong> Exin</p>
+            <p><strong>Año:</strong> 2012</p>
+            <p><strong>Descripción:</strong> Certificación en IT Service Management basada en las mejores prácticas de ITIL.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cursos de Mejoramiento Tecnológico -->
+    <div class="education-group animate-on-scroll">
+      <h3 class="group-title">Cursos de Mejoramiento Tecnológico</h3>
+      <div class="education-list">
+        <!-- Curso 1 -->
+        <div class="education-card">
+          <div class="card-header" onclick="toggleDetails(this)">
+            <h4>Base de Datos: Conceptualización y Sistemas de Administración</h4>
+            <span class="arrow">▼</span>
+          </div>
+          <div class="card-details">
+            <p><strong>Centro:</strong> Servicio Nacional de Empleo - SENA</p>
+            <p><strong>Año:</strong> 2005</p>
+            <p><strong>Descripción:</strong> Fundamentos de bases de datos y sistemas de administración.</p>
+          </div>
+        </div>
+
+        <!-- Curso 2 -->
+        <div class="education-card">
+          <div class="card-header" onclick="toggleDetails(this)">
+            <h4>Estructura del Lenguaje de Programación C++ (Nivel I y II)</h4>
+            <span class="arrow">▼</span>
+          </div>
+          <div class="card-details">
+            <p><strong>Centro:</strong> Servicio Nacional de Empleo - SENA</p>
+            <p><strong>Año:</strong> 2005</p>
+            <p><strong>Descripción:</strong> Introducción y desarrollo avanzado en programación con C++.</p>
+          </div>
+        </div>
+
+        <!-- Curso 3 -->
+        <div class="education-card">
+          <div class="card-header" onclick="toggleDetails(this)">
+            <h4>Curso de SAP Basis</h4>
+            <span class="arrow">▼</span>
+          </div>
+          <div class="card-details">
+            <p><strong>Centro:</strong> Logicalis</p>
+            <p><strong>Año:</strong> 2022</p>
+            <p><strong>Descripción:</strong> Fundamentos y administración de sistemas SAP Basis.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
+
+<script>
+  // Función para expandir/colapsar detalles
+  function toggleDetails(header: { closest: (arg0: string) => any; querySelector: (arg0: string) => any; }) {
+    const card = header.closest('.education-card');
+    const details = card.querySelector('.card-details');
+    const arrow = header.querySelector('.arrow');
+
+    if (details.style.display === 'block') {
+      details.style.display = 'none';
+      arrow.textContent = '▼';
+    } else {
+      details.style.display = 'block';
+      arrow.textContent = '▲';
+    }
+  }
+
+  // Inicializar Scroll Reveal
+  document.addEventListener('DOMContentLoaded', () => {
+    ScrollReveal().reveal('.animate-on-scroll', {
+      duration: 1000,
+      distance: '10px',
+      easing: 'ease-out',
+      origin: 'bottom',
+      interval: 200,
+    });
+  });
+</script>
+
+<style>
+/* Estilos generales */
+.section.dark-mode {
+  background-color: #2C3E50;
+  color: #ffffff;
+  padding: 2rem 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.education-group {
+  margin-bottom: 3rem;
+}
+
+.group-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #ECF0F1; /* Color de acento */
+}
+
+.education-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.education-card {
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(250, 250, 250, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.education-card:hover {
+  transform: scale(1.03);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+.card-header h4 {
+  margin: 0;
+  font-size: 1.0rem;
+  color: #ffffff;
+}
+
+.card-header .arrow {
+  font-size: 1.2rem;
+  color: #ECF0F1;
+  transition: transform 0.3s ease;
+}
+
+.card-details {
+  display: none; /* Oculto por defecto */
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #d4d4d4;
+}
+
+.card-details p {
+  margin: 0.5rem 0;
+}
+</style>
